@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Módulo 3 — Comienza a construir tu app | Become a Rapid Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.x/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Become a Rapid Developer</a>
+    </div>
+  </nav>
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4 text-center">Módulo 3: Comienza a construir tu app</h1>
+      <div class="accordion" id="accordionModulo3">
+        <!-- Apartado 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              1. Introducción y Fase de Desarrollo
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <p>En este módulo comenzarás a construir tu app usando el Desktop Modeler. Aprenderás a crear y editar páginas y botones, y a definir la estructura de datos con el Domain Model.</p>
+              <h5>La siguiente fase: Construyendo tu app</h5>
+              <p>Después de definir las historias de usuario y crear el wireframe, es momento de desarrollar la app. El primer paso es revisar y priorizar las historias de usuario para comenzar por la que más valor aporta.</p>
+              <p>Ejemplo: Para Jimmy, la historia "Como administrador, quiero poder acceder y gestionar mis datos fácilmente para administrar mi empresa de forma eficiente" es ideal para empezar.</p>
+              <ul>
+                <li>Tener una página principal que dé acceso a otras páginas.</li>
+                <li>Ajustar el diseño de la página principal para los botones.</li>
+                <li>Agregar los botones.</li>
+                <li>Agregar las páginas a las que los botones enlazarán.</li>
+                <li>Enlazar los botones a las páginas que muestran la información.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              2. Desktop Modeler y Creación de la Página Principal
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Desktop Modeler</h5>
+              <p>Usarás el Desktop Modeler para construir la app de Jimmy. Con esta herramienta puedes crear páginas, definir la estructura de datos y acceder a funciones avanzadas de Mendix.</p>
+              <h6>Abrir tu app en el Desktop Modeler</h6>
+              <ol>
+                <li>En el Developer Portal, haz clic en la flecha junto a Edit App y selecciona Edit in Desktop Modeler.</li>
+                <li>Si no lo tienes instalado, se te ofrecerá descargarlo. Si tienes varias versiones, selecciona la correcta.</li>
+                <li>Inicia sesión con tus credenciales Mendix.</li>
+                <li>La app se descargará automáticamente del Team Server.</li>
+              </ol>
+              <h6>Explorando el Desktop Modeler</h6>
+              <ul>
+                <li>Barra de control superior: menús y botones para abrir, editar, ver, ejecutar y desplegar la app.</li>
+                <li>Project Explorer (izquierda): acceso a recursos como páginas, microflows y navegación.</li>
+                <li>Panel derecho: Toolbox, Propiedades y Conector.</li>
+                <li>Pestañas inferiores: Historias, Cambios y Errores.</li>
+                <li>Centro: Editor para construir recursos, con modos de edición y vista previa.</li>
+              </ul>
+              <h6>Crear la página principal</h6>
+              <ol>
+                <li>Elige el layout Atlas_Default para mantener consistencia.</li>
+                <li>Cambia el título a "LearnNow Training Management" y agrega un subtítulo.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              3. Estructura, Layout y Widgets
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Estructura y Layout Grid</h5>
+              <p>El layout grid te permite estructurar tus páginas en filas y columnas, adaptando el diseño para desktop, tablet y móvil. Puedes usar containers para agrupar widgets y darles estilo o alineación.</p>
+              <h6>Ejemplo de información a mostrar:</h6>
+              <ul>
+                <li>Cursos</li>
+                <li>Lugares</li>
+                <li>Profesores</li>
+                <li>Alumnos</li>
+              </ul>
+              <p>La página principal debe tener cuatro botones, adaptados para cada dispositivo (responsive).</p>
+              <h6>Agregar columnas</h6>
+              <ol>
+                <li>Elimina el layout grid existente y agrega uno nuevo con cuatro columnas (3,3,3,3).</li>
+                <li>Configura las clases para que en tablet se muestren dos columnas por fila.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              4. Botones y Páginas
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Agregar botones</h5>
+              <ol>
+                <li>Usa el building block Card Action en cada columna.</li>
+                <li>Cambia el texto y el icono de cada botón (Cursos, Lugares, Profesores, Alumnos).</li>
+              </ol>
+              <h5>Crear páginas</h5>
+              <ol>
+                <li>Crea páginas de tipo List_Default para cada entidad: Course_Overview, Location_Overview, Teacher_Overview, Trainee_Overview.</li>
+                <li>Enlaza cada botón a su página correspondiente usando la acción "Show a page".</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              5. Modelo de Dominio, Entidades y Atributos
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Agregar datos y definir el modelo de dominio</h5>
+              <p>El Domain Model es la representación visual de la estructura de datos. Cada entidad será una tabla en la base de datos y cada atributo una columna.</p>
+              <h6>Ejemplo de entidades y atributos:</h6>
+              <ul>
+                <li><strong>Course:</strong> Título (String), Descripción (String), Duración (Integer), Precio (Decimal)</li>
+                <li><strong>Location:</strong> Nombre (String), Dirección (String)</li>
+                <li><strong>Teacher:</strong> Nombre (String), Email (String)</li>
+                <li><strong>Trainee:</strong> Nombre (String), Dirección (String), Email (String)</li>
+              </ul>
+              <p>Usa CamelCase para nombrar entidades y atributos.</p>
+              <ol>
+                <li>Abre el Domain Model y crea las entidades y atributos necesarios.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              6. Importar Proyecto y Actualizar Módulo
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Obtener la última versión de la app LearnNow</h5>
+              <p>Si necesitas empezar desde cero o actualizar tu proyecto, puedes importar el paquete del proyecto o del módulo desde la pestaña Recursos.</p>
+              <h6>Importar proyecto:</h6>
+              <ol>
+                <li>Descarga el paquete desde Recursos.</li>
+                <li>En Desktop Modeler, selecciona File &gt; Import Project Package.</li>
+                <li>Sube el proyecto al Team Server.</li>
+              </ol>
+              <h6>Importar historias de usuario:</h6>
+              <ol>
+                <li>Descarga el archivo Excel desde Recursos.</li>
+                <li>Importa las historias en la sección Collaborate &gt; Stories.</li>
+              </ol>
+              <h6>Actualizar módulo:</h6>
+              <ol>
+                <li>Descarga el módulo desde Recursos.</li>
+                <li>Importa el módulo y reemplaza el existente.</li>
+                <li>Configura la navegación para enlazar las páginas principales.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              7. Resumen
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Resumen</h5>
+              <ul>
+                <li>Elementos básicos del Desktop Modeler</li>
+                <li>Uso de widgets y building blocks</li>
+                <li>Cómo ajustar el layout para diferentes dispositivos</li>
+                <li>Cómo crear botones y páginas</li>
+                <li>Cómo enlazar páginas y botones</li>
+                <li>Qué es el modelo de dominio, entidades y atributos</li>
+                <li>Cómo crear el modelo de dominio</li>
+              </ul>
+              <p>En el siguiente módulo aprenderás a conectar las entidades del modelo de dominio con tus páginas para tener datos dinámicos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Apartado 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              8. Preguntas de Repaso
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionModulo3">
+            <div class="accordion-body">
+              <h5>Preguntas de Repaso</h5>
+              <ol>
+                <li>¿Desde dónde accedes al Domain Model en el Desktop Modeler?<br>
+                  <span class="text-success">a) Project Explorer ✔️</span>
+                </li>
+                <li>¿El valor 1.23 se almacena en qué tipo de atributo?<br>
+                  <span class="text-success">c) Decimal ✔️</span>
+                </li>
+                <li>¿Para qué sirve el tipo Enumeration?<br>
+                  <span class="text-success">b) Lista de valores predefinidos ✔️</span>
+                </li>
+                <li>¿Cuándo es una página responsive?<br>
+                  <span class="text-success">a) Cuando funciona y se ve bien en todos los dispositivos ✔️</span>
+                </li>
+                <li>¿El peso total de las columnas en un Layout Grid debe sumar?<br>
+                  <span class="text-success">c) 12 ✔️</span>
+                </li>
+                <li>¿Es posible agregar varios widgets en un container?<br>
+                  <span class="text-success">a) Verdadero ✔️</span>
+                </li>
+                <li>¿Puedes tener diferentes layouts para móvil, tablet y desktop?<br>
+                  <span class="text-success">a) Verdadero ✔️</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.x/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
